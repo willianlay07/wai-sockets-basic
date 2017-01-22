@@ -16,3 +16,14 @@ console.log(timestampMoment.local().format("hh:mm a"));
 //now.subtract(1, 'year');
 //console.log(now.format());
 //console.log(now.format("MMM Do YYYY, h:mm a"));
+
+// Wai - Example;
+/*
+console.log(now.format('x'));
+var mycurrent_time 	= now.format('x');
+mycurrent_time 		= parseInt(mycurrent_time);
+
+var timestampMoment 	= moment.utc(mycurrent_time);
+console.log("UTC Time : " + timestampMoment.format("hh:mm A"));
+console.log("My Local Time : " + timestampMoment.local().format("hh:mm a"));
+*/
