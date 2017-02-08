@@ -21,6 +21,7 @@ socket.on('message', function(message){
 	var $messageWrp 			= jQuery('.messagesWrp');
 	console.log('New message : ');
 	console.log(message.text);
+	//console.log(message.name);
 
 	$messageWrp.append('<p><strong>' + message.name + ' ' + momentTimestamp.local().format("hh:mm a") + '</strong></p>');
 	$messageWrp.append('<p>' + message.text + '</p>');
@@ -41,6 +42,4 @@ $form.on('submit', function(event){
 	});
 
 	$message.val('');
-
-	
 });
